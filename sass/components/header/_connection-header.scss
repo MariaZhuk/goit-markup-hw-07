@@ -1,0 +1,47 @@
+.connection-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+
+    &__item {
+        display: flex;
+    }
+
+    &__item:not(:nth-child(1)) {
+        margin-left: 50px;
+    }
+
+    &__icon-mail,
+    &__icon-phone {
+        margin-right: 10px;
+        transition: fill var(--time-transition) var(--cubic);
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        color: inherit;
+        font-weight: 500;
+        line-height: 1.143;
+        letter-spacing: 0.02em;
+        transition: color var(--time-transition) var(--cubic);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+
+            & .connection-list__icon-mail,
+            & .connection-list__icon-mail,
+            & .connection-list__icon-phone,
+            & .connection-list__icon-phone {
+                fill: var(--accent-color);
+            }
+        }
+    
+    }
+}
+
+
+
+

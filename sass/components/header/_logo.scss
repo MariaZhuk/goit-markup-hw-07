@@ -1,0 +1,23 @@
+.logo {
+    display: flex;
+    margin-right: 93px;
+    font-family: Raleway, sans-serif;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    text-decoration: none;
+
+    &__basic-color {
+        color: var(--accent-color);
+    }
+
+    &__color-basic-studio {
+        color: #000000;
+    }
+
+}
+
+
+

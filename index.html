@@ -5,42 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/modern-normalize.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body class="page">
-    <header>
+    <header class="header">
         <div class="container">
-            <div class="container__header-box">
-                <nav class="container__nav-header">
-                    <ul class="container__nav-list list">
-                        <li class="container__list-item">
+            <div class="header-box">
+                <nav class="nav-header">
+                    <ul class="nav-header__list list">
+                        <li class="nav-header__item">
                             <a class="logo link" href="#">
                                 <span class="logo__basic-color">Web</span><span class="logo__color-basic-studio">Studio</span></a>
                         </li>
-                        <li class="container__list-item ">
-                            <a class="link container__nav-link container__nav-link--active" href="./index.html">Студия</a>
+                        <li class="nav-header__item ">
+                            <a class="link nav-header__link nav-header__link--active" href="./index.html">Студия</a>
                         </li>
-                        <li class="container__list-item">
-                            <a class="container__nav-link link" href="./portfolio.html">Портфолио</a>
+                        <li class="nav-header__item">
+                            <a class="nav-header__link link" href="./portfolio.html">Портфолио</a>
                         </li>
-                        <li class="container__list-item">
-                            <a class="container__nav-link link" href="#">Контакты</a>
+                        <li class="nav-header__item">
+                            <a class="nav-header__link link" href="#">Контакты</a>
                         </li>
                     </ul>
                 </nav>
-                <ul class="container__connection-list list">
-                    <li class="container__connection-item">
-                        <a class="container__connection-link link" href="mailto:info@devstudio.com">
-                            <svg width="16" height="12" class="container__icon-mail">
+                <ul class="connection-list list">
+                    <li class="connection-list__item">
+                        <a class="connection-list__link link" href="mailto:info@devstudio.com">
+                            <svg width="16" height="12" class="connection-list__icon-mail">
                         <use href="./images/icons.svg#icon-envelope"></use>
                     </svg>info@devstudio.com</a>
                     </li>
-                    <li class="container__connection-item"> 
-                        <a class="container__connection-link link" href="tel:+380961111111">
-                            <svg width="10" height="16" class="container__icon-phone">
+                    <li class="connection-list__item"> 
+                        <a class="connection-list__link link" href="tel:+380961111111">
+                            <svg width="10" height="16" class="connection-list__icon-phone">
                         <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a>
                     </li>
@@ -105,7 +102,7 @@
             <div class="container">
                 <h2 hidden>Заголовок</h2>
                 <ul class="instruments__list list">
-                    <li class="instruments__item instruments-list">
+                    <li class="instruments__item">
                         <div class="icon-container">
                             <svg width="70" height="70" class="instruments__icon">
                                 <use href="./images/icons.svg#icon-antenna"></use>
@@ -178,7 +175,7 @@
                 <h2 class="section-team__title">Наша команда</h2>
                 <ul class="section-team__list list">
                     <li class="section-team__item">
-                        <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270">
+                        <img class="section-team__foto" src="./images/igor.jpg" alt="Игорь Демьяненко" width="270">
                         <h3 class="section-team__name">Игорь Демьяненко</h3>
                         <p class="section-team__profession">Product Designer</p>
                         <ul class="social-list list">
@@ -214,7 +211,7 @@
                       
                     </li>
                     <li class="section-team__item">
-                        <img src="./images/olga.jpg" alt="Ольга Репина" width="270">
+                        <img class="section-team__foto" src="./images/olga.jpg" alt="Ольга Репина" width="270">
                         <h3 class="section-team__name">Ольга Репина</h3>
                         <p class="section-team__profession">Frontend Developer</p>
                         <ul class="social-list list">
@@ -249,7 +246,7 @@
                        </ul>
                     </li>
                     <li class="section-team__item">
-                        <img src="./images/nikolay.jpg" alt="Николай Тарасов" width="270">
+                        <img class="section-team__foto" src="./images/nikolay.jpg" alt="Николай Тарасов" width="270">
                         <h3 class="section-team__name">Николай Тарасов</h3>
                         <p class="section-team__profession">Marketing</p>
                         <ul class="social-list list">
@@ -284,7 +281,7 @@
                        </ul>
                     </li>
                     <li class="section-team__item">
-                        <img src="./images/misha.jpg" alt="Михаил Ермаков" width="270">
+                        <img class="section-team__foto" src="./images/misha.jpg" alt="Михаил Ермаков" width="270">
                         <h3 class="section-team__name">Михаил Ермаков</h3>
                         <p class="section-team__profession">UI Designer</p>
                         <ul class="social-list list">
@@ -377,47 +374,47 @@
             <div class="container nav-footer__container"> 
                 <div class="container-adress">
                     <a class="logo logo--change-color" href="#"><span class="logo__basic-color">Web</span><span class="logo__color-basic-studio--inverse">Studio</span></a>
-                        <address class="nav-footer__adress">
-                            <ul class="nav-footer__list list">
-                                <li class="nav-footer__item">
-                                    <a class="nav-footer__contacts nav-footer__contacts--white-color link"
+                        <address class="address">
+                            <ul class="address-list list">
+                                <li class="address-list__item">
+                                    <a class="address-list__contacts address-list__contacts--white-color link"
                                         href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4235356,30.5338797,17z/data=!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383859?hl=ru"><span class="street">г. Киев, пр-т Леси Украинки, 26</span></a>
                                 </li>
-                                <li class="nav-footer__item">
-                                    <a class="nav-footer__contacts link" href="mailto:info@example.com">info@example.com</a>
+                                <li class="address-list__item">
+                                    <a class="address-list__contacts link" href="mailto:info@example.com">info@example.com</a>
                                 </li>
-                                <li class="nav-footer__item">
-                                    <a class="nav-footer__contacts link" href="tel:380991111111">+38 099 111 11 11</a>
+                                <li class="address-list__item">
+                                    <a class="address-list__contacts link" href="tel:380991111111">+38 099 111 11 11</a>
                                 </li>
                             </ul>
                         </address>
                 </div>
                 <div class="invitation">
                     <h2 class="invitation__title">Присоединяйтесь</h2>
-                    <ul class="invitation__social-list list">
-                        <li class="invitation__social-link">
-                            <a href="#" class="invitation__icon link" aria-label="Instagram">
+                    <ul class="social-list list">
+                        <li class="social-list__item">
+                            <a href="#" class="social-list__link link" aria-label="Instagram">
                                 <svg width="20" height="20">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="invitation__social-link">
-                            <a href="#" class="invitation__icon link" aria-label="Twitter">
+                        <li class="social-list__item">
+                            <a href="#" class="social-list__link link" aria-label="Twitter">
                                 <svg width="20" height="20">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="invitation__social-link">
-                            <a href="#" class="invitation__icon link" aria-label="Facebook">
+                        <li class="social-list__item">
+                            <a href="#" class="social-list__link link" aria-label="Facebook">
                                 <svg width="20" height="20">
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                 </svg>
                         </a>
                         </li>
-                            <li class="invitation__social-link">
-                                <a href="#" class="invitation__icon link" aria-label="Linkedin">
+                            <li class="social-list__item">
+                                <a href="#" class="social-list__link link" aria-label="Linkedin">
                                 <svg width="20" height="20">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                 </svg>
@@ -437,7 +434,7 @@
                         </svg> 
                     </button>
                     </div>
-                </form> 
+                </form>    
             </div>
         </section>
     </footer>

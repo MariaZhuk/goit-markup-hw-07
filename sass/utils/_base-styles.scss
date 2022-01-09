@@ -1,0 +1,46 @@
+.page {
+    color: var(--primery-text-color);
+    background-color: var(--primery-bg-color);
+    font-family: roboto, sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.714;
+}
+
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+
+.link {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.list {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+.instruments,
+.work,
+.example-work {
+    background: var(--primery-bg-color);
+}

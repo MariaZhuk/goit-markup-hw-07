@@ -1,0 +1,37 @@
+.hero-container {
+    background-color: #C4C4C4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/bg-hero.jpg);
+    background-size: cover;
+    width: 1600px;
+    height: 600px;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero-container__title {
+    margin-bottom: 30px;
+    color: var(--color-hero);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero-container__button,
+.modal-submit {
+    background-color: var(--accent-color);
+    color: var(--color-button);
+    width: 200px;
+    margin-bottom: 0px;
+    padding: 10px 32px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+}
