@@ -3,7 +3,7 @@
     padding-bottom: 60px;
     padding-top: 60px;
 
-    &__container {
+    .nav-footer__container {
         display: flex;
     }
 
@@ -16,12 +16,12 @@
         display: block;
         margin-left: 0;
 
-        &__item:not(:first-child) {
+        .address-list__item:not(:first-child) {
             margin-left: 0;
             margin-top: 9px;
         }
 
-         &__contacts {
+         .address-list__contacts {
              color: rgba(255, 255, 255, 0.6);
              font-style: normal;
              font-weight: 400;
@@ -34,7 +34,7 @@
             }
          }
 
-         &__contacts--white-color {
+         .address-list__contacts--white-color {
              color: #ffffff;
          }
     }

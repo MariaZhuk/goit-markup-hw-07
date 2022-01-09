@@ -2,7 +2,7 @@
     text-align: center;
 }
 
-.section-customers__title {
+.section-title {
     margin-bottom: 50px;
     font-weight: bold;
     font-size: 36px;
@@ -12,39 +12,39 @@
     color: var(--primery-text-color);
 }
 
-.section-customers__item {
+.customers-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.customers-list__item {
     display: flex;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     width: 170px;
     height: 92px;
     transition: border-color var(--time-transition) var(--cubic);
-}
 
-.section-customers__item:not(:last-child) {
-    margin-right: 30px;
-}
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+    }
 
-.section-customers__link {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-icon)
-}
+    .customers-list__link {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-icon)
+    }
 
-.section-customers__link svg {
-    fill: currentColor;
-    transition: fill var(--time-transition) var(--cubic);
-}
+    .customers-list__icon {
+        fill: currentColor;
+        transition: fill var(--time-transition) var(--cubic);
+    }
 
-.section-customers__item:hover,
-.section-customers__item:focus {
-    border-color: var(--accent-color);
-}
-
-.section-customers__link:hover .section-customers__icon,
-.section-customers__link:focus .section-customers__icon {
-    fill: var(--accent-color);
+    &:hover .customers-list__icon,
+    &:focus .customers-list__icon {
+        fill: var(--accent-color);
+    }
 }

@@ -7,13 +7,13 @@
     margin-top: 0;
     margin-bottom: 0;
 
-    &__list {
+    .nav-header__list {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    &__item:not(:nth-child(2)) {
+    .nav-header__item:not(:nth-child(2)) {
         margin-left: 50px;
     }
 }
@@ -31,7 +31,7 @@
          color: var(--accent-color);
      }
 
-     &--active {
+     .nav-header__link--active {
          color: var(--accent-color);
 
          &::after {
