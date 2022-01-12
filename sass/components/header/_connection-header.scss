@@ -30,16 +30,17 @@
         &:hover,
         &:focus {
             color: var(--accent-color);
+        }
 
-            .connection-list__link .connection-list__icon-mail,
-            .connection-list__link .connection-list__icon-mail,
-            .connection-list__link .connection-list__icon-phone,
-            .connection-list__link .connection-list__icon-phone {
-                fill: var(--accent-color);
-            }
+        &:hover .connection-list__icon-mail,
+        &:focus .connection-list__icon-mail,
+        &:hover .connection-list__icon-phone,
+        &:focus .connection-list__icon-phone {
+            fill: var(--accent-color);
         }
     
     }
+      
 }
 
 
